@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rubiocode | Full-Stack Web Developer </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script async=false src="https://use.fontawesome.com/3eaa1c0789.js"></script>
+    <!--<link rel="stylesheet" href="./Assets/debug.css"/> -->
+    <style>
+        .hero {
+            background: url(./Assets/img/Ra340ff8aacf7f61589beb5a9609ef29a.jpg) center / cover;
+        }
+
+        .center {
+            color: black;
+            text-align: center;
+            background-color: rgba(250, 250, 245, 0.35)
+        }
+
+        #pages{
+            color: black;
+        }
+
+        /*cursor effect*/
+        .txt-type>.txt {
+            color: black;
+            font-size: 5rem;
+            border-right: 0.2rem solid black;
+        }
+
+        #homepageSub {
+            color: black;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: rgb(126, 110, 110);
+        }
+
+        .bounce-arrow {
+            color: black;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+
+        .bouncyArrow {
+            display: inline-block;
+            width: 100%;
+            margin-top: 15px;
+            animation: bounce 2s ease infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            25%,
+            55%,
+            75%,
+            100% {
+                transform: translateY(0);
+            }
+
+            45% {
+                transform: translateY(-20px);
+            }
+
+            65% {
+                transform: translateY(-10px);
+            }
+
+            85% {
+                transform: translateY(-5px);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--Welcome Page-->
+    <section class="hero is-medium">
+        <div class="hero-head">
+            <div class="tabs is-fullwidth has-text-weight-bold is-family-sansserif" id="pages">
+                <ul>
+                    <li>
+                        <a href="ContactMe/ContactMe.html">
+                            <span class="icon"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></span>
+                            <span>Let's Get In Contact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./Portfolio/portfolio.html">
+                            <span>Skip to Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./AboutMe/AboutMe.html">
+                            <span>Something About Me</span>
+                            <span class="icon"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <section class="hero is-fullheight">
+                <div class="hero-body">
+                    <div class="container center">
+                        <h1 class="title">
+                            <span class="txt-type" data-wait="2000" data-words='["Hello, I&#39;m Rubi."]'></span>
+                        </h1>
+                        <p class="subtitle" id="homepageSub">
+                            Welcome to my website
+                        </p>
+                        <a href="./AboutMe/AboutMe.html" class="bounce-arrow"
+                            title="Click on this double-arrow or tabs to navigate the site">
+                            <span class="bouncyArrow">
+                                <i class="fa fa-angle-double-down fa-2x"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <nav class="navbar is-fixed-bottom">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <h1>@rubiocode</h1>
+                            <span class="navbar-burger" data-target="navbarMenuHeroB">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div id="navbarMenuHeroB" class="navbar-menu">
+                            <div class="navbar-end">
+                                <a class="navbar-item fa fa-github fa-2x" aria-hidden="true"
+                                    href="https://github.com/rubiocode">
+    
+                                </a>
+                                <a class="navbar-item fa fa-linkedin-square fa-2x" aria-hidden="true"
+                                    href="https://www.linkedin.com/in/rubidia-rubio-in">
+    
+                                </a>
+                                <a class="navbar-item fa fa-paperclip fa-2x" aria-hidden="true"
+                                    href="./Assets/Full-Stack Web Developer Resume.pdf">
+    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </div>
+    </section>
+    <script src="./Assets/main.js"></script>
+</body>
+
+</html>
