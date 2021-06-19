@@ -11,17 +11,35 @@
     <script async=false src="https://use.fontawesome.com/3eaa1c0789.js"></script>
     <!--<link rel="stylesheet" href="./Assets/debug.css"/> -->
     <style>
-        .hero {
-            background: url(./Assets/img/Ra340ff8aacf7f61589beb5a9609ef29a.jpg) center / cover;
+        .header {
+            height: 7vh;
+            margin:0 !important;
         }
-
+        .wrap{
+            overflow: hidden;
+            position: relative;
+        }
+        .content{
+            position: relative;
+            height: 93vh;
+        }
+        .hero {
+            opacity: 0.50;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+        }
+        .navbar{
+            background-color: transparent !important;
+        }
         .center {
             color: black;
             text-align: center;
-            background-color: rgba(250, 250, 245, 0.35)
         }
 
-        #pages{
+        #pages {
             color: black;
         }
 
@@ -35,6 +53,10 @@
         #homepageSub {
             color: black;
             font-size: 2rem;
+        }
+
+        #homepageTitle{
+            padding-top: 10rem;
         }
 
         .subtitle {
@@ -82,9 +104,9 @@
 
 <body>
     <!--Welcome Page-->
-    <section class="hero is-medium">
+    <section class="is-large">
         <div class="hero-head">
-            <div class="tabs is-fullwidth has-text-weight-bold is-family-sansserif" id="pages">
+            <div class="header tabs is-fullwidth has-text-weight-bold is-family-sansserif" id="pages">
                 <ul>
                     <li>
                         <a href="ContactMe/ContactMe.html">
@@ -105,50 +127,52 @@
                     </li>
                 </ul>
             </div>
-            <section class="hero is-fullheight">
-                <div class="hero-body">
-                    <div class="container center">
-                        <h1 class="title">
-                            <span class="txt-type" data-wait="2000" data-words='["Hello, I&#39;m Rubi."]'></span>
-                        </h1>
-                        <p class="subtitle" id="homepageSub">
-                            Welcome to my website
-                        </p>
-                        <a href="./AboutMe/AboutMe.html" class="bounce-arrow"
-                            title="Click on this double-arrow or tabs to navigate the site">
-                            <span class="bouncyArrow">
-                                <i class="fa fa-angle-double-down fa-2x"></i></span>
-                        </a>
-                    </div>
-                </div>
-                <nav class="navbar is-fixed-bottom">
-                    <div class="container">
-                        <div class="navbar-brand">
-                            <h1>@rubiocode</h1>
-                            <span class="navbar-burger" data-target="navbarMenuHeroB">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </span>
+            <section class="wrap">
+                <img src="./Assets/img/mile-high-skyline-kevin-munro.jpg" class="hero is-fullheight">
+                <div class="content">
+                    <div class="hero-body">
+                        <div class="container center">
+                            <h1 class="title" id="homepageTitle">
+                                <span class="txt-type" data-wait="2000" data-words='["Hello, I&#39;m Rubi."]'></span>
+                            </h1>
+                            <p class="subtitle" id="homepageSub">
+                                Welcome to my website
+                            </p>
+                                <span class="bouncyArrow"><i class="fa fa-angle-double-down fa-2x"></i></span>
+                            <a href="./AboutMe/AboutMe.html" class="bounce-arrow"
+                                title="Press this button or use the tabs at the top of the page to navigate to a spicific section"><button class="button is-outlined">Start Here!</button>
+                            </a>
                         </div>
-                        <div id="navbarMenuHeroB" class="navbar-menu">
-                            <div class="navbar-end">
-                                <a class="navbar-item fa fa-github fa-2x" aria-hidden="true"
-                                    href="https://github.com/rubiocode">
+                    </div>
+                    <nav class="navbar is-fixed-bottom">
+                        <div class="container">
+                            <div class="navbar-brand">
+                                <a href="./index.html"><h1>@rubiocode</h1></a>
+                                <span class="navbar-burger" data-target="navbarMenuHeroB">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </div>
+                            <div id="navbarMenuHeroB" class="navbar-menu">
+                                <div class="navbar-end">
+                                    <a class="navbar-item fa fa-github fa-2x" aria-hidden="true"
+                                        href="https://github.com/rubiocode">
     
-                                </a>
-                                <a class="navbar-item fa fa-linkedin-square fa-2x" aria-hidden="true"
-                                    href="https://www.linkedin.com/in/rubidia-rubio-in">
+                                    </a>
+                                    <a class="navbar-item fa fa-linkedin-square fa-2x" aria-hidden="true"
+                                        href="https://www.linkedin.com/in/rubidia-rubio-in">
     
-                                </a>
-                                <a class="navbar-item fa fa-paperclip fa-2x" aria-hidden="true"
-                                    href="./Assets/Full-Stack Web Developer Resume.pdf">
+                                    </a>
+                                    <a class="navbar-item fa fa-paperclip fa-2x" aria-hidden="true"
+                                        href="./Assets/Full-Stack Web Developer Resume.pdf">
     
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </nav>
+                    </nav>
+                </div>  
             </section>
         </div>
     </section>
