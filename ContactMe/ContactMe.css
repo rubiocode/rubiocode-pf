@@ -1,4 +1,4 @@
-
+/*HTML elements styling*/
 *{
     margin:0;
     padding:0;
@@ -14,14 +14,7 @@ a:hover{
     color: blue;
 }
 
-#canvas1{
-    position: absolute;
-    background: red;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
+/*Contact div styling*/
 .contact{
     position: relative;
     min-height: 100vh;
@@ -30,8 +23,6 @@ a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /*background-image: url(../Assets/img/mile-high-skyline-kevin-munro.jpg);
-    background-size: cover;*/
     
 
 }
@@ -90,21 +81,6 @@ a:hover{
     flex-direction: column;
     font-weight: 300;
 
-}
-
-@media (max-width:991px){
-    .contact{
-        padding:50px;
-    }
-    .container{
-        flex-direction: column;
-    }
-    .container .contactInfo{
-        margin-bottom: 40px;
-    }
-    .container .contactInfo{
-        width: 100%; 
-    }
 }
 
 .container .contactInfo .box .text h3{
@@ -172,4 +148,61 @@ a:hover{
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
+}
+
+.header {
+    height: 7vh;
+    margin: 0 !important;
+}
+
+.bounce-arrow {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.bouncyArrow {
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    25%,
+    55%,
+    75%,
+    100% {
+        transform: translateY(0);
+    }
+
+    45% {
+        transform: translateY(-20px);
+    }
+
+    65% {
+        transform: translateY(-10px);
+    }
+
+    85% {
+        transform: translateY(-5px);
+    }
+
+}
+
+@media (max-width:991px){
+    .contact{
+        padding:50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo{
+        width: 100%; 
+    }
 }
