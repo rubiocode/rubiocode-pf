@@ -34,7 +34,6 @@ I used Bulma CSS Framework to create a mobile responsive portfolio with the foll
 - [x] Navbar consistent on each page.
 - [x] Navbar on each page contain links to Homepage, About Me, Contact Me, and Portfolio pages.
 - [x] All links work.
-- [x] Each page has valid and correct HTML. (I used a [validation service](https://validator.w3.org/))
 - [x] Contains some personal information.
 
 <a name="view"></a>
@@ -68,7 +67,7 @@ Click through tabs/buttons to view the content of the pages. Social media links 
 ## Project Status 
 
 * The Portfolio page will be updated regularly to include new projects.
-* The About Me page may be updated to add more information.
+* The About Me page may be updated to add more information in the future.
 * Learning canvas html to add to About Me page.
 * Contact Me message will be updated to become responsive to user input
 
