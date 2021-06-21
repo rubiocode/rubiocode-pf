@@ -8,103 +8,15 @@
     <title>rubiocode | Full-Stack Web Developer </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script async=false src="https://use.fontawesome.com/3eaa1c0789.js"></script>
     <!--<link rel="stylesheet" href="./Assets/debug.css"/> -->
-    <style>
-        .header {
-            height: 7vh;
-            margin:0 !important;
-        }
-        .wrap{
-            overflow: hidden;
-            position: relative;
-        }
-        .content{
-            position: relative;
-            height: 93vh;
-        }
-        .hero {
-            opacity: 0.50;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100vh;
-        }
-        .navbar{
-            background-color: transparent !important;
-        }
-        .center {
-            color: black;
-            text-align: center;
-        }
-
-        #pages {
-            color: black;
-        }
-
-        /*cursor effect*/
-        .txt-type>.txt {
-            color: black;
-            font-size: 5rem;
-            border-right: 0.2rem solid black;
-        }
-
-        #homepageSub {
-            color: black;
-            font-size: 2rem;
-        }
-
-        #homepageTitle{
-            padding-top: 10rem;
-        }
-
-        .subtitle {
-            color: rgb(126, 110, 110);
-        }
-
-        .bounce-arrow {
-            color: black;
-            text-decoration: none;
-            font-size: 2rem;
-        }
-
-        .bouncyArrow {
-            display: inline-block;
-            width: 100%;
-            margin-top: 15px;
-            animation: bounce 2s ease infinite;
-        }
-
-        @keyframes bounce {
-
-            0%,
-            25%,
-            55%,
-            75%,
-            100% {
-                transform: translateY(0);
-            }
-
-            45% {
-                transform: translateY(-20px);
-            }
-
-            65% {
-                transform: translateY(-10px);
-            }
-
-            85% {
-                transform: translateY(-5px);
-            }
-
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./Assets/homepage.css">
 </head>
-
 <body>
-    <!--Welcome Page-->
+
+    <!--Homepage Page-->
     <section class="is-large">
+
+        <!--navigation tabs to html sections -->
         <div class="hero-head">
             <div class="header tabs is-fullwidth has-text-weight-bold is-family-sansserif" id="pages">
                 <ul>
@@ -116,7 +28,7 @@
                     </li>
                     <li>
                         <a href="./Portfolio/portfolio.html">
-                            <span>Skip to Projects</span>
+                            <span>Check out my Projects</span>
                         </a>
                     </li>
                     <li>
@@ -127,6 +39,8 @@
                     </li>
                 </ul>
             </div>
+
+            <!--Homepage Body-->
             <section class="wrap">
                 <img src="./Assets/img/mile-high-skyline-kevin-munro.jpg" class="hero is-fullheight">
                 <div class="content">
@@ -138,16 +52,21 @@
                             <p class="subtitle" id="homepageSub">
                                 Welcome to my website
                             </p>
-                                <span class="bouncyArrow"><i class="fa fa-angle-double-down fa-2x"></i></span>
+                            <span class="bouncyArrow"><i class="fa fa-angle-double-down fa-2x"></i></span>
                             <a href="./AboutMe/AboutMe.html" class="bounce-arrow"
-                                title="Press this button or use the tabs at the top of the page to navigate to a spicific section"><button class="button is-outlined">Start Here!</button>
+                                title="Press this button or use the tabs at the top of the page to navigate to a spicific section"><button
+                                    class="button is-outlined">Start Here!</button>
                             </a>
                         </div>
                     </div>
+
+                    <!--navbar fixed bottom-->
                     <nav class="navbar is-fixed-bottom">
                         <div class="container">
                             <div class="navbar-brand">
-                                <a href="./index.html"><h1>@rubiocode</h1></a>
+                                <a href="./index.html">
+                                    <h1>@rubiocode</h1>
+                                </a>
                                 <span class="navbar-burger" data-target="navbarMenuHeroB">
                                     <span></span>
                                     <span></span>
@@ -158,24 +77,25 @@
                                 <div class="navbar-end">
                                     <a class="navbar-item fa fa-github fa-2x" aria-hidden="true"
                                         href="https://github.com/rubiocode">
-    
+
                                     </a>
                                     <a class="navbar-item fa fa-linkedin-square fa-2x" aria-hidden="true"
                                         href="https://www.linkedin.com/in/rubidia-rubio-in">
-    
+
                                     </a>
                                     <a class="navbar-item fa fa-paperclip fa-2x" aria-hidden="true"
                                         href="./Assets/Full-Stack Web Developer Resume.pdf">
-    
+
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </nav>
-                </div>  
+                </div>
             </section>
         </div>
     </section>
+    <script async=false src="https://use.fontawesome.com/3eaa1c0789.js"></script>
     <script src="./Assets/main.js"></script>
 </body>
 
