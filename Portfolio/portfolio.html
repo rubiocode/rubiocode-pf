@@ -8,109 +8,12 @@
     <title>rubiocode | Full-Stack Web Developer </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script async=false src="https://use.fontawesome.com/3eaa1c0789.js"></script>
     <!--<link rel="stylesheet" href="../Assets/debug.css"/> -->
-    <style>
-        body {
-            background-color: rgb(235, 235, 235, 0.50);
-        }
-
-        #tabs {
-            padding-top: 2rem;
-        }
-
-
-
-        #dayImg {
-            height: 50vh;
-            width: 95%;
-        }
-
-        #weatherImg {
-            height: 50vh;
-        }
-
-        #passwordImg {
-            height: 50vh;
-        }
-
-        #triviaImg {
-            height: 50vh;
-        }
-
-        #plannerImg {
-            height: 50vh;
-        }
-
-        #portfolioImg {
-            height: 50vh;
-        }
-
-        #portfoliov2Img{
-            height: 50vh;
-        }
-
-        .image {
-            display: flex;
-            position: relative;
-            width: 400px;
-
-        }
-
-        .image_img {
-            display: block;
-            width: 100%;
-
-        }
-
-        .image_overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            color: #ffffff;
-            font-family: 'Quicksand', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.25s;
-        }
-
-        .image_overlay>* {
-            transform: translateY(20px);
-            transition: transform 0.25;
-        }
-
-        .image_overlay:hover {
-            opacity: 1;
-        }
-
-        .image_overlay:hover>* {
-            transform: translateY(0);
-        }
-
-        .image_title {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-
-        .imgage_description {
-            font-size: 1.50rem;
-            margin-top: 0.25rem;
-        }
-
-        .btn {
-            padding-left: 8rem;
-        }
-    </style>
+    <link rel="stylesheet" href="./portfolio.css">
 </head>
 
 <body>
-    <!--About Me Page-->
+    <!--Projects top html section nav header-->
     <div class="tabs is-fullwidth has-text-light has-text-weight-bold is-family-sansserif" id="pages">
         <ul>
             <li>
@@ -132,6 +35,8 @@
             </li>
         </ul>
     </div>
+
+    <!--fixed bottom navbar-->
     <section class="hero is-small">
         <div class="hero-head">
             <nav class="navbar is-fixed-bottom">
@@ -160,8 +65,13 @@
                 </div>
             </nav>
         </div>
+    </section>
+    <!--Projects Main Body Section-->
+    <section>
         <div class="hero-body">
             <div class="container has-text-centered">
+
+                <!--Projects title section-->
                 <div class="aboutme">
                     <p class="title">
                         Projects
@@ -173,6 +83,8 @@
                     <p>Hover each image to see project description</p>
                 </div>
             </div>
+
+            <!--Projects filter buttons section-->
             <div class="tabs is-centered" id="tabs">
                 <ul>
                     <li><button class="button is-link is-inverted filter" id="proj1"> HTML | CSS </button></li>
@@ -185,206 +97,233 @@
                     <li><button class="button is-link is-inverted filter active" id="all">All Projects</button></li>
                 </ul>
             </div>
-            <div class="columns is-multiline is-mobile is-vcentered results">
-                <div class="column" id="makeMyDayApp">
-                    <div class="column tile is-parent is-one-third">
-                        <article class="column tile is-child box">
-                            <div class="column image">
-                                <img class="image_img"
-                                    src="../Assets/img/rubiocode.github.io_Make_My_Day_index.html (1).png"
-                                    alt="Make My Day App" id="dayImg"></img>
-                                <div class="image_overlay">
-                                    <div class="image_title"> Make My Day App</div>
+        </div>
+    </section>
+
+    <!--Projects image display section-->
+    <section>
+        <div class="columns is-multiline is-mobile is-vcentered results">
+
+            <!--Make My Day App project image-->
+            <div class="column ease" id="makeMyDayApp">
+                <div class="column tile is-parent is-one-third">
+                    <article class="column tile is-child">
+                        <div class="column image">
+                            <img class="image_img"
+                                src="../Assets/img/rubiocode.github.io_Make_My_Day_index.html (1).png"
+                                alt="Make My Day App" id="dayImg"></img>
+                            <div class="image_overlay">
+                                <div class="image_title"> Make My Day App</div>
+                                <br></br>
+                                <p class="image_description">
+                                    This version of <em>Make My Day App</em> showcases my personal style and layout
+                                    of
+                                    the
+                                    homepage.
+                                    This app presents the user with an uplifting gallery of foxy images, quotes, and
+                                    gifs.
                                     <br></br>
-                                    <p class="image_description">
-                                        This version of <em>Make My Day App</em> showcases my personal style and layout
-                                        of
-                                        the
-                                        homepage.
-                                        This app presents the user with an uplifting gallery of foxy images, quotes, and
-                                        gifs.
-                                        <br></br>
-                                        Built with: HTML | CSS | JavaScript | JQuery | JSON | AJAX | MDBootstrap | CSS
-                                        Gradient
-                                        IO |
-                                        Third Party APIs
-                                        <br></br>
-                                        <a href="https://rubiocode.github.io/Make_My_Day/index.html"
-                                            class="has-text-white btn"><button>Live Version</button></a>
-                                        <br>
-                                        <a href="https://github.com/rubiocode/Make_My_Day"
-                                            class="has-text-white btn"><button>GitHub
-                                                Repository</button></a>
-                                    </p>
-                                </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="column" id="weatherDashboard">
-                    <div class="column tile is-parent is-one-third">
-                        <article class="column tile is-child box">
-                            <div class="image">
-                                <img class="image_img" src="../Assets/img/rubiocode.github.io_Weather-Dashboard_.png"
-                                    alt="Weather Dashboard App" id="weatherImg"></img>
-                                <div class="image_overlay">
-                                    <div class="image_title"> Weather Dashboard</div>
+                                    Built with: HTML | CSS | JavaScript | JQuery | JSON | AJAX | MDBootstrap | CSS
+                                    Gradient
+                                    IO |
+                                    Third Party APIs
                                     <br></br>
-                                    <p class="image_description">
-                                        This is a simple and easy to use application to check the local weather. It
-                                        displays
-                                        UV-index, current weather, five day forecast, and also saves previous city
-                                        entries
-                                        for
-                                        easy
-                                        access.
-                                        <br></br>
-                                        Built with: HTML | CSS | JavaScript | JQuery | JSON | MDBootstrap | Server Side
-                                        APIs
-                                        <br></br>
-                                        <a href="https://rubiocode.github.io/Weather-Dashboard/"
-                                            class="has-text-white btn"><button>Live Version</button></a>
-                                        <br>
-                                        <a href="https://github.com/rubiocode/Weather-Dashboard"
-                                            class="has-text-white btn"><button>GitHub
-                                                Repository</button></a>
-                                    </p>
-                                </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="column" id="triviaGame">
-                    <div class="column tile is-parent is-one-third">
-                        <article class="column tile is-child box">
-                            <div class="image">
-                                <img class="image_img"
-                                    src="../Assets/img/rubiocode.github.io_Trivia-Game_index.HTML.png"
-                                    alt="Trivia Game App" id="triviaImg"></img>
-                                <div class="image_overlay">
-                                    <div class="image_title"> Trivia Game</div>
-                                    <br></br>
-                                    <p class="image_description">
-                                        <em>Trivia Game App</em> presents the user with five
-                                        trivia programming questions, simply follow the rules of the game and get your
-                                        final
-                                        scores at the end of the game!.
-                                        <br></br>
-                                        Built with: HTML | CSS | JavaScript
-                                        <br></br>
-                                        <a href="https://rubiocode.github.io/Trivia-Game/index.HTML"
-                                            class="has-text-white btn"><button>Live Version</button></a>
-                                        <br>
-                                        <a href="https://github.com/rubiocode/Trivia-Game"
-                                            class="has-text-white btn"><button>GitHub Repository</button></a>
-                                    </p>
-                                </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="column" id="passwordGenerator">
-                    <div class="column tile is-parent is-one-third">
-                        <article class="column tile is-child box">
-                            <div class="image">
-                                <img class="image_img"
-                                    src="../Assets/img/rubiocode.github.io_Password-Generator_index.HTML.png"
-                                    alt="Password Generator App" id="passwordImg"></img>
-                                <div class="image_overlay">
-                                    <div class="image_title"> Password Generator</div>
-                                    <br></br>
-                                    <p class="image_description">
-                                        This application generates a randomized password based on certain password criteria. In addition, the application presents the user with the option to save or reset the generated password. 
-                                        <br></br>
-                                        Built with: HTML | CSS | JavaScript
-                                        <br></br>
-                                        <a href="https://rubiocode.github.io/Password-Generator/index.HTML"
-                                            class="has-text-white btn"><button>Live Version</button></a>
-                                        <br>
-                                        <a href="https://github.com/rubiocode/Password-Generator"
-                                            class="has-text-white btn"><button>GitHub Repository</button></a>
-                                    </p>
-                                </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="column" id="dayPlanner">
-                    <div class="column tile is-parent is-one-third">
-                        <article class="column tile is-child box">
-                            <div class="image">
-                                <img class="image_img"
-                                    src="../Assets/img/rubiocode.github.io_Day-Planner_index.html.png"
-                                    alt="Day Planner App" id="plannerImg"></img>
-                                <div class="image_overlay">
-                                    <div class="image_title">Day Planner</div>
-                                    <br></br>
-                                    <p class="image_description">
-                                        This application is a very simple and easy to use to help the user stay
-                                        organized by
-                                        adding and saving tasks from a time period. The application is color coded to
-                                        present past tasks, present, and future tasks.
-                                        <br></br>
-                                        Built with: HTML | CSS | JavaScript | Server Side APIs | JQuery
-                                        <br></br>
-                                        <a href="https://rubiocode.github.io/Day-Planner/index.html"
-                                            class="has-text-white btn"><button>Live Version</button></a>
-                                        <br>
-                                        <a href="https://github.com/rubiocode/Day-Planner"
-                                            class="has-text-white btn"><button>GitHub Repository</button></a>
-                                    </p>
-                                </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="column" id="portfolio">
-                    <div class="column tile is-parent is-one-third">
-                        <article class="column tile is-child box">
-                            <div class="image">
-                                <img class="image_img" src="../Assets/img/rubiocode.github.io_portfolio_.png"
-                                    alt="Portfolio v01 App" id="portfolioImg"></img>
-                                <div class="image_overlay">
-                                    <div class="image_title">Portfolio v01.0</div>
-                                    <br></br>
-                                    <p class="image_description">
-                                        First version of my full-stack web developer portfolio.
-                                        <br></br>
-                                        Built with: HTML | CSS
-                                        <br></br>
-                                        <a href="https://rubiocode.github.io/portfolio/"
-                                            class="has-text-white btn"><button>Live Version</button></a>
-                                        <br>
-                                        <a href="https://github.com/rubiocode/portfolio"
-                                            class="has-text-white btn"><button>GitHub Repository</button></a>
-                                    </p>
-                                </div>
-                        </article>
-                    </div>
+                                    <a href="https://rubiocode.github.io/Make_My_Day/index.html"
+                                        class="has-text-white btn"><button class="button is-normal is-light">Live Version</button></a>
+                                    <br>
+                                    <a href="https://github.com/rubiocode/Make_My_Day"
+                                        class="has-text-white btn"><button class="button is-normal is-light">GitHub
+                                            Repository</button></a>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-        <div class="column" id="portfoliov2">
-            <div class="column tile is-parent is-one-third">
-                <article class="column tile is-child box">
-                    <div class="image">
-                        <img class="image_img"
-                            src="../Assets/img/127.0.0.1_5500_index.html.png"
-                            alt="Portfolio V2.0 App" id="portfolio2Img"></img>
-                        <div class="image_overlay">
-                            <div class="image_title"> Portfolio v02.0</div>
-                            <br></br>
-                            <p class="image_description">
-                                This is the lastest version of my web developer portfolio showcasing a more modern, interactive, and responsive design. 
+
+            <!--Portfolio v02 image-->
+            <div class="column ease" id="portfoliov2">
+                <div class="column tile is-parent is-one-third">
+                    <article class="column tile is-child">
+                        <div class="image">
+                            <img class="image_img" src="../Assets/img/127.0.0.1_5500_index.html.png"
+                                alt="Portfolio V2.0 App" id="portfolio2Img"></img>
+                            <div class="image_overlay">
+                                <div class="image_title"> Portfolio v02.0</div>
                                 <br></br>
-                                Built with: HTML | CSS | JavaScript | Bulma
-                                <br></br>
-                                <a href="https://rubiocode.github.io/rubiocode-pf/"
-                                    class="has-text-white btn"><button>Live Version</button></a>
-                                <br>
-                                <a href="https://github.com/rubiocode/rubiocode-pf"
-                                    class="has-text-white btn"><button>GitHub Repository</button></a>
-                            </p>
+                                <p class="image_description">
+                                    This is the lastest version of my web developer portfolio showcasing a more
+                                    modern, interactive, and responsive design.
+                                    <br></br>
+                                    Built with: HTML | CSS | JavaScript | Bulma
+                                    <br></br>
+                                    <a href="https://rubiocode.github.io/rubiocode-pf/"
+                                        class="has-text-white btn"><button class="button is-normal is-light">Live Version</button></a>
+                                    <br>
+                                    <a href="https://github.com/rubiocode/rubiocode-pf"
+                                        class="has-text-white btn"><button class="button is-normal is-light">GitHub Repository</button></a>
+                                </p>
+                            </div>
                         </div>
-                </article>
+                    </article>
+                </div>
+            </div>
+            <!--Weather Dashboard project image-->
+            <div class="column ease" id="weatherDashboard">
+                <div class="column tile is-parent is-one-third">
+                    <article class="column tile is-child">
+                        <div class="image">
+                            <img class="image_img" src="../Assets/img/rubiocode.github.io_Weather-Dashboard_.png"
+                                alt="Weather Dashboard App" id="weatherImg"></img>
+                            <div class="image_overlay">
+                                <div class="image_title"> Weather Dashboard</div>
+                                <br></br>
+                                <p class="image_description">
+                                    This is a simple and easy to use application to check the local weather. It
+                                    displays
+                                    UV-index, current weather, five day forecast, and also saves previous city
+                                    entries
+                                    for
+                                    easy
+                                    access.
+                                    <br></br>
+                                    Built with: HTML | CSS | JavaScript | JQuery | JSON | MDBootstrap | Server Side
+                                    APIs
+                                    <br></br>
+                                    <a href="https://rubiocode.github.io/Weather-Dashboard/"
+                                        class="has-text-white btn"><button class="button is-normal is-light">Live Version</button></a>
+                                    <br>
+                                    <a href="https://github.com/rubiocode/Weather-Dashboard"
+                                        class="has-text-white btn"><button class="button is-normal is-light">GitHub
+                                            Repository</button></a>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!--Day Planner App project image-->
+            <div class="column ease" id="dayPlanner">
+                <div class="column tile is-parent is-one-third">
+                    <article class="column tile is-child">
+                        <div class="image">
+                            <img class="image_img" src="../Assets/img/rubiocode.github.io_Day-Planner_index.html.png"
+                                alt="Day Planner App" id="plannerImg"></img>
+                            <div class="image_overlay">
+                                <div class="image_title">Day Planner</div>
+                                <br></br>
+                                <p class="image_description">
+                                    This application is a very simple and easy to use to help the user stay
+                                    organized by
+                                    adding and saving tasks from a time period. The application is color coded to
+                                    present past tasks, present, and future tasks.
+                                    <br></br>
+                                    Built with: HTML | CSS | JavaScript | Server Side APIs | JQuery
+                                    <br></br>
+                                    <a href="https://rubiocode.github.io/Day-Planner/index.html"
+                                        class="has-text-white btn"><button class="button is-normal is-light">Live Version</button></a>
+                                    <br>
+                                    <a href="https://github.com/rubiocode/Day-Planner"
+                                        class="has-text-white btn"><button class="button is-normal is-light">GitHub Repository</button></a>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!--Trivia Game project image-->
+            <div class="column ease" id="triviaGame">
+                <div class="column tile is-parent is-one-third">
+                    <article class="column tile is-child">
+                        <div class="image">
+                            <img class="image_img" src="../Assets/img/rubiocode.github.io_Trivia-Game_index.HTML.png"
+                            alt="Trivia Game App" id="triviaImg"></img>
+                            <div class="image_overlay">
+                                <div class="image_title"> Trivia Game</div>
+                                <br></br>
+                                <p class="image_description">
+                                    <em>Trivia Game App</em> presents the user with five
+                                    trivia programming questions, simply follow the rules of the game and get your
+                                    final
+                                    scores at the end of the game!.
+                                    <br></br>
+                                    Built with: HTML | CSS | JavaScript
+                                    <br></br>
+                                    <a href="https://rubiocode.github.io/Trivia-Game/index.HTML"
+                                        class="has-text-white btn"><button class="button is-normal is-light">Live Version</button></a>
+                                    <br>
+                                    <a href="https://github.com/rubiocode/Trivia-Game"
+                                        class="has-text-white btn"><button class="button is-normal is-light">GitHub Repository</button></a>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+    
+            <!--Password Generator project image-->
+            <div class="column" id="passwordGenerator">
+                <div class="column tile is-parent is-one-third">
+                    <article class="column tile is-child">
+                        <div class="image">
+                            <img class="image_img" src="../Assets/img/rubiocode.github.io_Password-Generator_index.HTML.png"
+                            alt="Password Generator App" id="passwordImg"></img>
+                            <div class="image_overlay">
+                                <div class="image_title"> Password Generator</div>
+                                <br></br>
+                                <p class="image_description">
+                                    This application generates a randomized password based on certain password
+                                    criteria. In addition, the application presents the user with the option to save
+                                    or reset the generated password.
+                                    <br></br>
+                                    Built with: HTML | CSS | JavaScript
+                                    <br></br>
+                                    <a href="https://rubiocode.github.io/Password-Generator/index.HTML"
+                                        class="has-text-white btn"><button class="button is-normal is-light">Live Version</button></a>
+                                    <br>
+                                    <a href="https://github.com/rubiocode/Password-Generator"
+                                        class="has-text-white btn"><button class="button is-normal is-light">GitHub Repository</button></a>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!--Portfolio v01 image-->
+            <div class="column" id="portfolio">
+                <div class="column tile is-parent is-one-third">
+                    <article class="column ease tile is-child">
+                        <div class="image">
+                            <img class="image_img" src="../Assets/img/rubiocode.github.io_portfolio_.png"
+                                alt="Portfolio v01 App" id="portfolioImg"></img>
+                            <div class="image_overlay">
+                                <div class="image_title">Portfolio v01.0</div>
+                                <br></br>
+                                <p class="image_description">
+                                    First version of my full-stack web developer portfolio.
+                                    <br></br>
+                                    Built with: HTML | CSS
+                                    <br></br>
+                                    <a href="https://rubiocode.github.io/portfolio/" class="has-text-white btn"><button class="button is-normal is-light">Live
+                                            Version</button></a>
+                                    <br>
+                                    <a href="https://github.com/rubiocode/portfolio"
+                                        class="has-text-white btn"><button class="button is-normal is-light">GitHub Repository</button></a>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
+
+    <!--Scripts-->
+    <script async=false src="https://use.fontawesome.com/3eaa1c0789.js"></script>
     <script src="./portfolio.js"></script>
 </body>
 

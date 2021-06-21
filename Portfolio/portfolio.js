@@ -1,3 +1,4 @@
+// declaring variables
 let allEl=document.querySelector("#all");
 
 let proj1El=document.querySelector("#proj1");
@@ -23,6 +24,9 @@ let triviaGameEl= document.getElementById("triviaGame");
 let portfolioEl= document.getElementById("portfolio");
 
 let portfoliov2El= document.getElementById("portfoliov2");
+
+
+/* creating event listeners to filter projects */
 
 //presenting all projects
 
