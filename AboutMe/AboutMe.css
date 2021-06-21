@@ -1,0 +1,11 @@
+/* removing link style from anchor tag*/
+a{
+    color: black;
+    font-weight: 500;
+}
+
+/*centering about me section*/
+.aboutme{      
+padding-left: 5rem;
+padding-right: 5rem;   
+}
