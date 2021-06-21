@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script async=false src="https://use.fontawesome.com/3eaa1c0789.js"></script>
+    <link rel="stylesheet" type="text/css" href="./ContactMe.css">
+    <!--<link rel="stylesheet" href="./Assets/debug.css"/> -->
+    <style>
+        .header {
+            height: 7vh;
+            margin: 0 !important;
+        }
+
+        .bounce-arrow {
+            color: black;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+
+        .bouncyArrow {
+            display: inline-block;
+            width: 100%;
+            margin-top: 15px;
+            animation: bounce 2s ease infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            25%,
+            55%,
+            75%,
+            100% {
+                transform: translateY(0);
+            }
+
+            45% {
+                transform: translateY(-20px);
+            }
+
+            65% {
+                transform: translateY(-10px);
+            }
+
+            85% {
+                transform: translateY(-5px);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--Welcome Page-->
+    <section>
+        <div class="hero">
+            <div class="header tabs is-halfwidth has-text-weight-bold is-family-sansserif" id="pages">
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <span class="icon"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></span>
+                            <span>Back to Homepage</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <section class="contact">
+                <div class="content">
+                    <h1>Contact Me </h1>
+                    <span class="bouncyArrow"><i class="fa fa-angle-double-down fa-2x"></i></span>
+                            <a href="#fullName" class="bounce-arrow"
+                                title="Press this button or use the tabs at the top of the page to navigate to a spicific section">
+                            </a>
+                </div>
+                <div class="container">
+                    <div class="contactInfo">
+                        <div class="box">
+                            <div class="icon"><a class="navbar-item fa fa-github fa-2x" aria-hidden="true"
+                                    href="https://github.com/rubiocode"></a></div>
+                            <div class="text">
+                                <h3>GitHub</h3>
+                                <p>https://github.com/rubiocode</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><a class="navbar-item fa fa-linkedin-square fa-2x" aria-hidden="true"
+                                    href="https://www.linkedin.com/in/rubidia-rubio-a42614210/"></a></div>
+                            <div class="text">
+                                <h3>Linkedin</h3>
+                                <p>https://www.linkedin.com/in/rubidia-rubio-in/</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><a class="navbar-item fa fa-envelope-o fa-2x" aria-hidden="true"
+                                    href="mailto:youremail@address.com"></a>
+                            </div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>w.rubidia.rubio@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactForm">
+                        <form>
+                            <h2>Send Message</h2>
+                            <div class="inputBox">
+                                <input type="text" name="" required="required" id="fullName">
+                                <span>Full Name</span>
+                                <div class="inputBox">
+                                    <input type="text" name="" required="required">
+                                    <span>Email</span>
+                                </div>
+                                <div class="inputBox">
+                                    <textarea required="required"></textarea>
+                                    <span>Type your message...</span>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="submit" name="" required="send">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <script src="./Assets/main.js"></script>
+</body>
+
+</html>
