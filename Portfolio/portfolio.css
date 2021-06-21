@@ -34,7 +34,7 @@ background-color: rgba(224, 217, 217, 0.5);
             display: flex;
             position: relative;
             width: 400px;
-            -moz-transition: all 1s ease-in-out
+            -webkit-transition: all 1s ease-in-out
 
         }
 
@@ -63,6 +63,7 @@ background-color: rgba(224, 217, 217, 0.5);
             justify-content: center;
             opacity: 0;
             transition: opacity 0.25s;
+            -webkit-transition: all 1s ease-in-out
         }
 
         .image_overlay>* {
@@ -71,7 +72,9 @@ background-color: rgba(224, 217, 217, 0.5);
         }
 
         .image_overlay:hover {
-            opacity: 1;
+            opacity: 2;
+            width: 500px;
+            height: 500px;
         }
 
         .image_overlay:hover>* {
